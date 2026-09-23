@@ -1,0 +1,1 @@
+{"id":"kite-x402-monitor-fixture","method":"GET","url":"https://vercel-x402-service.vercel.app/v1/status","source":"public acceptance fixture deployed from deploy/vercel-x402-service","expectedNetwork":"eip155:2368","expectedAsset":"0x38129cf4CE5E183eFF248F42A7D345Bb1B47621A","expectedPriceUsd":"0.001","discoveredAt":"2026-09-23T17:49:00.000Z"}

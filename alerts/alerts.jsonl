@@ -1,1 +1,2 @@
 {"candidateId":"kite-rust-axum-v1-price","createdAt":"2026-09-23T17:25:56.410Z","severity":"warning","reasonCodes":["UNREACHABLE"],"message":"TypeError: fetch failed","runId":"monitor-degraded-2026-09-24"}
+{"candidateId":"kite-x402-monitor-fixture","createdAt":"2026-09-23T17:53:11.532Z","severity":"warning","reasonCodes":["UNREACHABLE"],"message":"TimeoutError: The operation was aborted due to timeout","runId":"public-monitor-2026-09-24"}

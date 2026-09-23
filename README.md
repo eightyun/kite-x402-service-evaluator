@@ -9,6 +9,8 @@ codes.
 Automated output is advisory. KiteAI maintainers retain the final admission
 decision.
 
+Public monitored service: <https://vercel-x402-service.vercel.app/v1/status>
+
 ## What it evaluates
 
 For every candidate endpoint, the evaluator checks:
@@ -187,12 +189,23 @@ npm start -- monitor \
   --input data/admitted.jsonl \
   --policy config/policy.json \
   --out artifacts \
-  --alerts alerts/alerts.jsonl
+  --alerts alerts/alerts.jsonl \
+  --fail-on-alert true
 ```
 
 Any `pending` result creates a warning; any `reject` result creates a critical
-alert record. The included scheduled workflow is disabled until a real admitted
-candidate file is committed, preventing noisy or misleading monitoring.
+alert record. `--fail-on-alert true` returns exit code 2 after preserving the
+run evidence, so GitHub Actions reports the scheduled job as failed. The
+included workflow probes the curated public service every six hours and always
+uploads its evidence and alert files.
+
+The public fixture is deployed from
+[`deploy/vercel-x402-service`](deploy/vercel-x402-service). Its first committed
+monitor run passed all three probes; see
+[`reports/public-monitor-healthy-2026-09-24`](reports/public-monitor-healthy-2026-09-24).
+The transport-failure run in
+[`reports/public-monitor-alert-2026-09-24`](reports/public-monitor-alert-2026-09-24)
+shows the corresponding warning path.
 
 ## 2026-09-24 evaluation evidence
 
@@ -206,6 +219,8 @@ rule.
 Evidence is in [`reports/evaluation-2026-09-24`](reports/evaluation-2026-09-24),
 manual reviews are in [`reviews/reviews.jsonl`](reviews/reviews.jsonl), and the
 verified Kite testnet settlement is in [`payment-audits`](payment-audits).
+Repository-owner confirmation of all three reviews is recorded in
+[`reviews/owner-signoff.json`](reviews/owner-signoff.json).
 
 ## Decision model
 

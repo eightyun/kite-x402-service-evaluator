@@ -34,7 +34,7 @@ Commands:
   discover-snapshots --directory <dir> --prefix <prefix> --endpoint <url> --limit <count> --out <candidates.jsonl> --source <source.json>
   ingest --root <services-dir> --out <candidates.jsonl>
   probe --input <candidates.jsonl> [--policy config/policy.json] [--out artifacts]
-  monitor --input <admitted.jsonl> [--policy config/policy.json] [--out artifacts] [--alerts alerts/alerts.jsonl]
+  monitor --input <admitted.jsonl> [--policy config/policy.json] [--out artifacts] [--alerts alerts/alerts.jsonl] [--fail-on-alert true]
   export --run <artifacts/runs/run-id> --out <reports/run-id>
   replay --source-run <artifacts/runs/run-id> --policy <policy.json> --out <artifacts> --run-id <id>
   review --candidate <id> --automated <status> --final <status> --reviewer <name> --rationale <text> [--misjudgment <text>]
@@ -91,6 +91,13 @@ async function main(): Promise<void> {
         : {}),
     });
     console.log(JSON.stringify(run, null, 2));
+    if (
+      command === "monitor" &&
+      options.get("fail-on-alert") === "true" &&
+      (run.counts.pending > 0 || run.counts.reject > 0)
+    ) {
+      process.exitCode = 2;
+    }
     return;
   }
   if (command === "export") {

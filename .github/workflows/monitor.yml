@@ -2,9 +2,8 @@ name: Monitor admitted x402 services
 
 on:
   workflow_dispatch:
-  # Enable the schedule after data/admitted.jsonl contains reviewed public endpoints.
-  # schedule:
-  #   - cron: "0 */6 * * *"
+  schedule:
+    - cron: "0 */6 * * *"
 
 jobs:
   monitor:
@@ -16,7 +15,7 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci
-      - run: npm start -- monitor --input data/admitted.jsonl --out artifacts --alerts alerts/alerts.jsonl
+      - run: npm start -- monitor --input data/admitted.jsonl --out artifacts --alerts alerts/alerts.jsonl --fail-on-alert true
       - uses: actions/upload-artifact@v4
         if: always()
         with:

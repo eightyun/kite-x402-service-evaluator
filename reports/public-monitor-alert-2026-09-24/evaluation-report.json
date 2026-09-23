@@ -1,0 +1,31 @@
+{
+  "run": {
+    "runId": "public-monitor-2026-09-24",
+    "mode": "monitor",
+    "startedAt": "2026-09-23T17:52:41.517Z",
+    "completedAt": "2026-09-23T17:53:11.529Z",
+    "candidateCount": 1,
+    "counts": {
+      "pass": 0,
+      "pending": 1,
+      "reject": 0
+    },
+    "policyFile": "config/policy.json"
+  },
+  "evaluations": [
+    {
+      "candidateId": "kite-x402-monitor-fixture",
+      "status": "pending",
+      "reasonCodes": [
+        "UNREACHABLE"
+      ],
+      "summary": "TimeoutError: The operation was aborted due to timeout",
+      "attemptStatuses": [
+        "pending",
+        "pending",
+        "pending"
+      ],
+      "evaluatedAt": "2026-09-23T17:53:11.526Z"
+    }
+  ]
+}
