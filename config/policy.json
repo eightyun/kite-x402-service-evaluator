@@ -1,0 +1,33 @@
+{
+  "allowedNetworks": ["eip155:2366", "eip155:2368"],
+  "assets": {
+    "eip155:2366": [
+      {
+        "address": "0x7aB6f3ed87C42eF0aDb67Ed95090f8bF5240149e",
+        "symbol": "USDC.e",
+        "decimals": 6,
+        "eip712Name": "Bridged USDC (Kite AI)",
+        "eip712Version": "2"
+      }
+    ],
+    "eip155:2368": [
+      {
+        "address": "0x38129cf4CE5E183eFF248F42A7D345Bb1B47621A",
+        "symbol": "pieUSD",
+        "decimals": 18,
+        "eip712Name": "pieUSD",
+        "eip712Version": "1"
+      }
+    ]
+  },
+  "maxPriceUsd": "0.05",
+  "requestTimeoutMs": 10000,
+  "retries": 3,
+  "maxConcurrency": 10,
+  "maxEvidenceBodyBytes": 65536,
+  "paymentBudget": {
+    "enabled": false,
+    "maxPerCallUsd": "0.01",
+    "maxPerRunUsd": "1.00"
+  }
+}

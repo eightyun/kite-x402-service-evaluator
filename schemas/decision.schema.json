@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "x402 admission recommendation",
+  "type": "object",
+  "required": ["candidateId", "status", "reasonCodes", "summary", "attemptStatuses", "evaluatedAt"],
+  "properties": {
+    "candidateId": { "type": "string" },
+    "status": { "enum": ["pass", "pending", "reject"] },
+    "reasonCodes": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "summary": { "type": "string" },
+    "selectedTerm": { "type": "object" },
+    "attemptStatuses": { "type": "array", "items": { "enum": ["pass", "pending", "reject"] } },
+    "evaluatedAt": { "type": "string", "format": "date-time" }
+  }
+}

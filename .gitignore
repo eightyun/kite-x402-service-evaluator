@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+.DS_Store
+
+# Runtime evidence may contain large or sensitive response bodies.
+artifacts/runs/
+reports/generated/

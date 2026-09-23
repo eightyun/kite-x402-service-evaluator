@@ -1,0 +1,39 @@
+{
+  "name": "kite-x402-service-evaluator",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Auditable x402 service admission evaluator and continuous monitor for Kite",
+  "license": "Apache-2.0",
+  "author": "eightyun",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eightyun/kite-x402-service-evaluator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eightyun/kite-x402-service-evaluator/issues"
+  },
+  "homepage": "https://github.com/eightyun/kite-x402-service-evaluator#readme",
+  "keywords": ["kite", "x402", "evaluator", "monitoring"],
+  "type": "module",
+  "bin": {
+    "kite-x402-evaluator": "dist/src/cli.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "check": "tsc -p tsconfig.json --noEmit",
+    "test": "npm run build && node --test dist/tests/*.test.js",
+    "start": "tsx src/cli.ts",
+    "example": "tsx examples/mock-services.ts"
+  },
+  "dependencies": {
+    "yaml": "^2.8.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.0",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}

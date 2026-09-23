@@ -1,0 +1,2 @@
+{"id":"local-good","method":"GET","url":"http://127.0.0.1:3402/v1/good","source":"local-fixture","expectedNetwork":"eip155:2368","expectedPriceUsd":"0.001"}
+{"id":"local-no-402","method":"GET","url":"http://127.0.0.1:3402/v1/no-402","source":"local-fixture"}

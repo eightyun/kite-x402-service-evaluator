@@ -1,0 +1,26 @@
+name: Monitor admitted x402 services
+
+on:
+  workflow_dispatch:
+  # Enable the schedule after data/admitted.jsonl contains reviewed public endpoints.
+  # schedule:
+  #   - cron: "0 */6 * * *"
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm start -- monitor --input data/admitted.jsonl --out artifacts --alerts alerts/alerts.jsonl
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: x402-monitor-${{ github.run_id }}
+          path: |
+            artifacts/
+            alerts/

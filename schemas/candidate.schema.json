@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "x402 admission candidate",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "method", "url", "source"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]{1,95}$" },
+    "method": { "enum": ["GET", "POST", "PUT", "PATCH", "DELETE"] },
+    "url": { "type": "string", "format": "uri", "pattern": "^https://.+/v1/" },
+    "source": { "type": "string", "minLength": 1 },
+    "expectedNetwork": { "type": "string", "pattern": "^eip155:[0-9]+$" },
+    "expectedAsset": { "type": "string", "pattern": "^0x[0-9a-fA-F]{40}$" },
+    "expectedPriceUsd": { "type": "string", "pattern": "^[0-9]+(?:\\.[0-9]+)?$" }
+  }
+}
