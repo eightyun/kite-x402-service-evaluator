@@ -7,8 +7,18 @@
   "properties": {
     "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]{1,95}$" },
     "method": { "enum": ["GET", "POST", "PUT", "PATCH", "DELETE"] },
-    "url": { "type": "string", "format": "uri", "pattern": "^https://.+/v1/" },
+    "url": { "type": "string", "format": "uri", "pattern": "^https://" },
     "source": { "type": "string", "minLength": 1 },
+    "request": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "headers": { "type": "object", "additionalProperties": { "type": "string" } },
+        "body": true
+      }
+    },
+    "discoveredAt": { "type": "string", "format": "date-time" },
+    "catalogUpdatedAt": { "type": "string", "format": "date-time" },
     "expectedNetwork": { "type": "string", "pattern": "^eip155:[0-9]+$" },
     "expectedAsset": { "type": "string", "pattern": "^0x[0-9a-fA-F]{40}$" },
     "expectedPriceUsd": { "type": "string", "pattern": "^[0-9]+(?:\\.[0-9]+)?$" }

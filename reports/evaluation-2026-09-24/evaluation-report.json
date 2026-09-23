@@ -1,0 +1,2989 @@
+{
+  "run": {
+    "runId": "evaluation-2026-09-24-reviewed",
+    "mode": "evaluation",
+    "startedAt": "2026-09-23T17:19:41.216Z",
+    "completedAt": "2026-09-23T17:19:41.364Z",
+    "candidateCount": 200,
+    "counts": {
+      "pass": 0,
+      "pending": 0,
+      "reject": 200
+    },
+    "policyFile": "config/policy.json"
+  },
+  "evaluations": [
+    {
+      "candidateId": "402timezones-vercel-app-get--api-convert-timezone-4d36c72a47",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNREACHABLE"
+      ],
+      "summary": "TypeError: fetch failed",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.219Z"
+    },
+    {
+      "candidateId": "agentpay-tools-post--tools-pre-trade-check-call-c84f777912",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.221Z"
+    },
+    {
+      "candidateId": "agentres-dev-get--api-discover-restaurants-c529e5bed1",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.222Z"
+    },
+    {
+      "candidateId": "agentres-dev-get--api-wait-times-f8dc9031f4",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.222Z"
+    },
+    {
+      "candidateId": "agents-samedaydesk-com-get--extract-0058affbce",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.223Z"
+    },
+    {
+      "candidateId": "agi-apify-com-get--protocols-x402-prepaid-tokens-aac449457f",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.224Z"
+    },
+    {
+      "candidateId": "aiagentoracle-ai-get--api-v1-tokens-6587746fba",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.225Z"
+    },
+    {
+      "candidateId": "api-402rates-com-get--v1-ping-1c11c9bbd4",
+      "status": "reject",
+      "reasonCodes": [
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.225Z"
+    },
+    {
+      "candidateId": "api-aidress-ai-get--pay-agent-ottoai-crypto-news-b0f5b83444",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.226Z"
+    },
+    {
+      "candidateId": "api-bitrefill-com-get--x402-checkout-info-66bc91517e",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.227Z"
+    },
+    {
+      "candidateId": "api-bitrefill-com-get--x402-gift-cards-search-d58accfb45",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.227Z"
+    },
+    {
+      "candidateId": "api-dev-v2-ixs-finance-get--x402-vaults-7d48568be8",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.228Z"
+    },
+    {
+      "candidateId": "api-exa-ai-post--contents-0e94b971af",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.229Z"
+    },
+    {
+      "candidateId": "api-exa-ai-post--search-9d3fee40ca",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.230Z"
+    },
+    {
+      "candidateId": "api-hergertsynthora-com-post--v1-defi-yields-99de3e7802",
+      "status": "reject",
+      "reasonCodes": [
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.231Z"
+    },
+    {
+      "candidateId": "api-hyperextend-xyz-get--v1-candles-btc-1m-latest-f4ad53ddf5",
+      "status": "reject",
+      "reasonCodes": [
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.232Z"
+    },
+    {
+      "candidateId": "api-justaname-id-get--ens-v2-resolve-848a7deabe",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.233Z"
+    },
+    {
+      "candidateId": "api-kadec0-xyz-get--v1-geocode-c42184a6c2",
+      "status": "reject",
+      "reasonCodes": [
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.234Z"
+    },
+    {
+      "candidateId": "api-kadec0-xyz-get--v1-papers-c711f9a998",
+      "status": "reject",
+      "reasonCodes": [
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.234Z"
+    },
+    {
+      "candidateId": "api-kadec0-xyz-get--v1-scrape-ea038a0848",
+      "status": "reject",
+      "reasonCodes": [
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.235Z"
+    },
+    {
+      "candidateId": "api-kadec0-xyz-get--v1-serp-8da4499e1d",
+      "status": "reject",
+      "reasonCodes": [
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.235Z"
+    },
+    {
+      "candidateId": "api-kadec0-xyz-get--v1-serp-read-e697a8ea50",
+      "status": "reject",
+      "reasonCodes": [
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.236Z"
+    },
+    {
+      "candidateId": "api-loyalspark-online-get--x402-gateway-recipient-api-balance-bdcaafb9c4",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.237Z"
+    },
+    {
+      "candidateId": "api-loyalspark-online-get--x402-gateway-recipient-api-balances-cebff63af5",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.238Z"
+    },
+    {
+      "candidateId": "api-loyalspark-online-get--x402-gateway-recipient-api-offers-c267bd88df",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.238Z"
+    },
+    {
+      "candidateId": "api-loyalspark-online-get--x402-gateway-recipient-api-rewards-50766d9e57",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.239Z"
+    },
+    {
+      "candidateId": "api-loyalspark-online-get--x402-gateway-recipient-api-vouchers-a19d806c6c",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.240Z"
+    },
+    {
+      "candidateId": "api-loyalspark-online-get--x402-gateway-recipient-api-workflow-reward-status-213ce68a05",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.241Z"
+    },
+    {
+      "candidateId": "api-loyalspark-online-post--x402-gateway-recipient-api-prepare-transfer-363a62724d",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.242Z"
+    },
+    {
+      "candidateId": "api-nansen-ai-post--api-v1-profiler-address-current-balance-9e58268d02",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.242Z"
+    },
+    {
+      "candidateId": "api-nansen-ai-post--api-v1-tgm-who-bought-sold-8fb95d5bc0",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.243Z"
+    },
+    {
+      "candidateId": "api-oblique-markets-get--api-v1-paid-bazaar-pulse-3e733ff75f",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.244Z"
+    },
+    {
+      "candidateId": "api-oblique-markets-get--api-v1-paid-time-1ef106171a",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.244Z"
+    },
+    {
+      "candidateId": "api-onesource-io-get--api-chain-allowance-9f762d6a24",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.245Z"
+    },
+    {
+      "candidateId": "api-onesource-io-get--api-chain-block-latest-ae0b4311d3",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.246Z"
+    },
+    {
+      "candidateId": "api-onesource-io-get--api-chain-block-number-29de6c245f",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.247Z"
+    },
+    {
+      "candidateId": "api-onesource-io-get--api-chain-chain-id-3a7f3a2396",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.249Z"
+    },
+    {
+      "candidateId": "api-onesource-io-get--api-chain-code-0x6cf19308c22fc82ea620fa0b3e94948d20f27b96-777963b940",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.249Z"
+    },
+    {
+      "candidateId": "api-onesource-io-get--api-chain-contract-0xd0601ce157db5bdc3162bbac2a2c8af5320d9eec-b25c115970",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.250Z"
+    },
+    {
+      "candidateId": "api-onesource-io-get--api-chain-ens-vitalik-eth-d21857e094",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.251Z"
+    },
+    {
+      "candidateId": "api-onesource-io-get--api-chain-erc1155-balance-66569c64e8",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.251Z"
+    },
+    {
+      "candidateId": "api-onesource-io-get--api-chain-erc20-balance-f56e948b5f",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.252Z"
+    },
+    {
+      "candidateId": "api-onesource-io-get--api-chain-erc20-transfers-7bedc51c1a",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.252Z"
+    },
+    {
+      "candidateId": "api-onesource-io-get--api-chain-erc721-tokens-55619b59d3",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.253Z"
+    },
+    {
+      "candidateId": "api-onesource-io-get--api-chain-events-25fc076eb9",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.254Z"
+    },
+    {
+      "candidateId": "api-onesource-io-get--api-chain-live-balance-c9e9c7735e",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.254Z"
+    },
+    {
+      "candidateId": "api-onesource-io-get--api-chain-network-info-bb93a210bf",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.255Z"
+    },
+    {
+      "candidateId": "api-onesource-io-get--api-chain-nft-metadata-0582df8cac",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.255Z"
+    },
+    {
+      "candidateId": "api-onesource-io-get--api-chain-nft-owner-e41d724c01",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.256Z"
+    },
+    {
+      "candidateId": "api-onesource-io-get--api-chain-nonce-0xd8da6bf26964af9d7eed9e03e53415d37aa96045-d2db2f32a8",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.256Z"
+    },
+    {
+      "candidateId": "api-onesource-io-get--api-chain-pending-426f86d7b4",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.257Z"
+    },
+    {
+      "candidateId": "api-onesource-io-get--api-chain-proxy-0x6cf19308c22fc82ea620fa0b3e94948d20f27b96-cb223bb6a8",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.258Z"
+    },
+    {
+      "candidateId": "api-onesource-io-get--api-chain-receipt-0x5c504ed432cb51138bcf09aa5e8a410dd4a1e204ef-06ffadf92f",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.258Z"
+    },
+    {
+      "candidateId": "api-onesource-io-get--api-chain-storage-306d88fb32",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.259Z"
+    },
+    {
+      "candidateId": "api-onesource-io-get--api-chain-total-supply-d9882694ee",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.259Z"
+    },
+    {
+      "candidateId": "api-onesource-io-get--api-chain-tx-0x5c504ed432cb51138bcf09aa5e8a410dd4a1e204ef84bfe-3d91254b69",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.260Z"
+    },
+    {
+      "candidateId": "api-onesource-io-post--api-chain-call-5300bcc1ab",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.260Z"
+    },
+    {
+      "candidateId": "api-onesource-io-post--api-chain-estimate-gas-bf4516d57c",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.261Z"
+    },
+    {
+      "candidateId": "api-polym-uk-get--resolution-risk-1afff7eed1",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.262Z"
+    },
+    {
+      "candidateId": "api-printmoneylab-com-get--api-v1-kr-prices-ec429eaf86",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.262Z"
+    },
+    {
+      "candidateId": "api-robinx-io-get--feed-new-1233e9b963",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.263Z"
+    },
+    {
+      "candidateId": "api-run402-com-post--tiers-v1-prototype-2b9dc4ba0a",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.264Z"
+    },
+    {
+      "candidateId": "api-xfuel-app-post--v1-chat-completions-1570df0e4d",
+      "status": "reject",
+      "reasonCodes": [
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.265Z"
+    },
+    {
+      "candidateId": "blockrun-ai-get--api-v1-pm-polymarket-markets-43ebad7afa",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.266Z"
+    },
+    {
+      "candidateId": "blockrun-ai-post--api-v1-exa-contents-1560e0e945",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.267Z"
+    },
+    {
+      "candidateId": "blockrun-ai-post--api-v1-exa-search-3aa849e08f",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.268Z"
+    },
+    {
+      "candidateId": "bykaranteli-com-get--api-x402-flow-vpin-b5a0d46734",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.269Z"
+    },
+    {
+      "candidateId": "cars2026-vercel-app-get--api-cars-002f7d057c",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNREACHABLE"
+      ],
+      "summary": "TimeoutError: The operation was aborted due to timeout",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.269Z"
+    },
+    {
+      "candidateId": "cdp-agent-0-01-onrender-com-get-68021526c7",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.269Z"
+    },
+    {
+      "candidateId": "chat-gedx402-com-post--v1-chat-completions-6a66957762",
+      "status": "reject",
+      "reasonCodes": [
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.270Z"
+    },
+    {
+      "candidateId": "cheaptokens-ai-post--api-buy-3e0e1b838a",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.271Z"
+    },
+    {
+      "candidateId": "chrono-schemasure-com-post--v1-business-time-3640a31710",
+      "status": "reject",
+      "reasonCodes": [
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.272Z"
+    },
+    {
+      "candidateId": "coil-trade-get--api-crypto-gate-7c774bde27",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.273Z"
+    },
+    {
+      "candidateId": "coinflip402-vercel-app-get--api-coinflip-075883d93b",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNREACHABLE"
+      ],
+      "summary": "TimeoutError: The operation was aborted due to timeout",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.275Z"
+    },
+    {
+      "candidateId": "coingecko-use-x402atlas-com-get--price-b6e25db283",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.276Z"
+    },
+    {
+      "candidateId": "crypto-apitoll-cloud-get--v1-crypto-global-927c8eaa8a",
+      "status": "reject",
+      "reasonCodes": [
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.277Z"
+    },
+    {
+      "candidateId": "crypto-apitoll-cloud-get--v1-crypto-price-025d6030a2",
+      "status": "reject",
+      "reasonCodes": [
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.278Z"
+    },
+    {
+      "candidateId": "crypto-apitoll-cloud-get--v1-crypto-sentiment-47bb7ac572",
+      "status": "reject",
+      "reasonCodes": [
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.279Z"
+    },
+    {
+      "candidateId": "dicex402-vercel-app-get--api-dice-f143b9a213",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNREACHABLE"
+      ],
+      "summary": "TimeoutError: The operation was aborted due to timeout",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.279Z"
+    },
+    {
+      "candidateId": "dns-use-x402atlas-com-get--whois-1bd0838dbf",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.280Z"
+    },
+    {
+      "candidateId": "eagle-quickai-build-post--check-ec06a6d52c",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.280Z"
+    },
+    {
+      "candidateId": "edgar-apitoll-cloud-get--v1-edgar-filings-99d9c37b25",
+      "status": "reject",
+      "reasonCodes": [
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.282Z"
+    },
+    {
+      "candidateId": "email-auth-use-x402atlas-com-get--check-43a8a3653f",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.282Z"
+    },
+    {
+      "candidateId": "evm-gas-apitoll-cloud-get--v1-evm-gas-ac65b56c18",
+      "status": "reject",
+      "reasonCodes": [
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.283Z"
+    },
+    {
+      "candidateId": "flights-use-x402atlas-com-get--search-lhr-jfk-c6b6a87dda",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.284Z"
+    },
+    {
+      "candidateId": "gas-apitoll-cloud-get--v1-base-gas-cb8deb7877",
+      "status": "reject",
+      "reasonCodes": [
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.285Z"
+    },
+    {
+      "candidateId": "gateway-stride20k-com-get--v1-category-breakdown-515bacaaf6",
+      "status": "reject",
+      "reasonCodes": [
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.285Z"
+    },
+    {
+      "candidateId": "glim-sh-post--api-v1-amazon-search-77c65d4ada",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.286Z"
+    },
+    {
+      "candidateId": "glim-sh-post--api-v1-twitter-search-3334721663",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.286Z"
+    },
+    {
+      "candidateId": "google-trends-use-x402atlas-com-get--interest-by-region-97a479332f",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.287Z"
+    },
+    {
+      "candidateId": "google-trends-use-x402atlas-com-get--related-queries-29dac82f85",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.288Z"
+    },
+    {
+      "candidateId": "google-trends-use-x402atlas-com-get--trend-7ad50b28d4",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.288Z"
+    },
+    {
+      "candidateId": "gridpulse-theaslangroupllc-com-get--api-energy-carbon-intensity-3c7a62658d",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.289Z"
+    },
+    {
+      "candidateId": "headers-use-x402atlas-com-get-54cb493734",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.290Z"
+    },
+    {
+      "candidateId": "holidays-use-x402atlas-com-get--check-1520ed92e8",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.291Z"
+    },
+    {
+      "candidateId": "horrorstoryapi-vercel-app-get--api-horror-story-37a4b25dd2",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNREACHABLE"
+      ],
+      "summary": "TimeoutError: The operation was aborted due to timeout",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.292Z"
+    },
+    {
+      "candidateId": "hyperliquid-predict-use-x402atlas-com-get--outcomes-eaa08c856f",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.292Z"
+    },
+    {
+      "candidateId": "hypernatt-com-get--api-m2m-liq-radar-c780d29979",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.293Z"
+    },
+    {
+      "candidateId": "intel-chainquery-com-get--v1-fee-pressure-b039e40afb",
+      "status": "reject",
+      "reasonCodes": [
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.293Z"
+    },
+    {
+      "candidateId": "intel-twzrd-xyz-get--v1-intel-quick-solana-20wallet-20address-20-base58-encoded-20pu-81a0334c73",
+      "status": "reject",
+      "reasonCodes": [
+        "NO_402_RESPONSE"
+      ],
+      "summary": "expected HTTP 402, received 500",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.294Z"
+    },
+    {
+      "candidateId": "jmt-x402-proxy-jmthomasofficial-workers-dev-get--v2-api-whois-d1b0449d6a",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNREACHABLE"
+      ],
+      "summary": "TimeoutError: The operation was aborted due to timeout",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.295Z"
+    },
+    {
+      "candidateId": "jokes-endpoint-vercel-app-get--api-jokes-f984f172ae",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNREACHABLE"
+      ],
+      "summary": "TimeoutError: The operation was aborted due to timeout",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.295Z"
+    },
+    {
+      "candidateId": "keyronne-com-post--api-json-repair-4d498e6cae",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.296Z"
+    },
+    {
+      "candidateId": "kronossignals-com-get--api-v1-alerts-btc-8cd99ee612",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.296Z"
+    },
+    {
+      "candidateId": "kronossignals-com-get--api-v1-digest-btc-6b0394aa0e",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.297Z"
+    },
+    {
+      "candidateId": "kronossignals-com-get--api-v1-fear-greed-03229c0b8e",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.298Z"
+    },
+    {
+      "candidateId": "kronossignals-com-get--api-v1-funding-extremes-ae7960c278",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.298Z"
+    },
+    {
+      "candidateId": "kronossignals-com-get--api-v1-liquidations-btc-ff6bddff39",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.299Z"
+    },
+    {
+      "candidateId": "kronossignals-com-get--api-v1-liquidations-eth-19096763ee",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.300Z"
+    },
+    {
+      "candidateId": "kronossignals-com-get--api-v1-macro-4c400bc249",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.300Z"
+    },
+    {
+      "candidateId": "kronossignals-com-get--api-v1-options-iv-btc-66a66c4b6d",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.301Z"
+    },
+    {
+      "candidateId": "kronossignals-com-get--api-v1-overview-e0a8d76eba",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.302Z"
+    },
+    {
+      "candidateId": "kronossignals-com-get--api-v1-price-btc-c596ab70ae",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.302Z"
+    },
+    {
+      "candidateId": "kronossignals-com-get--api-v1-signals-btc-31e450e84e",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.303Z"
+    },
+    {
+      "candidateId": "ladyfortunalx402-vercel-app-get--api-fortune-042bd1ee6e",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNREACHABLE"
+      ],
+      "summary": "TimeoutError: The operation was aborted due to timeout",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.303Z"
+    },
+    {
+      "candidateId": "laso-finance-get--auth-abd3d8c2ed",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.304Z"
+    },
+    {
+      "candidateId": "laso-finance-get--get-card-05c931c6b0",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.304Z"
+    },
+    {
+      "candidateId": "laso-finance-get--order-gift-card-b9223aa609",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "NO_402_RESPONSE"
+      ],
+      "summary": "expected HTTP 402, received 404",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.305Z"
+    },
+    {
+      "candidateId": "lionx402-com-get--api-x402-wallet-screen-json-0d2399d56a",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.306Z"
+    },
+    {
+      "candidateId": "mcp-deep3-ai-post--tools-wave-1-c4946ee90a",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.306Z"
+    },
+    {
+      "candidateId": "memegeneratorx402-vercel-app-get--api-generate-meme-5238b20f05",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNREACHABLE"
+      ],
+      "summary": "TimeoutError: The operation was aborted due to timeout",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.307Z"
+    },
+    {
+      "candidateId": "minifetch-com-get--api-v1-x402-preflight-url-check-7639477fbc",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.307Z"
+    },
+    {
+      "candidateId": "minifetch-com-get--api-v1-x402-run-seo-page-audit-428c8f9377",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.308Z"
+    },
+    {
+      "candidateId": "omniterminal-app-get--api-x402-v1-news-65f8295f7c",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.309Z"
+    },
+    {
+      "candidateId": "options-lonestaroracle-xyz-get--flow-fc30bdcf19",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.310Z"
+    },
+    {
+      "candidateId": "ozmium-org-get--v1-loan-markets-789ad46408",
+      "status": "reject",
+      "reasonCodes": [
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.313Z"
+    },
+    {
+      "candidateId": "perpsignals-use-x402atlas-com-get--pairs-1b4f857a74",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.314Z"
+    },
+    {
+      "candidateId": "preppers-paradise-com-get--library-automatetheboringstuffwithpythonnew-02-what-is-pr-eb378a8195",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.315Z"
+    },
+    {
+      "candidateId": "pro-api-coingecko-com-get--api-v3-x402-onchain-search-pools-75630a5871",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNREACHABLE"
+      ],
+      "summary": "TimeoutError: The operation was aborted due to timeout",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.316Z"
+    },
+    {
+      "candidateId": "pro-api-coingecko-com-get--api-v3-x402-onchain-simple-networks-base-token-price-evm--f56d40b4f0",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNREACHABLE"
+      ],
+      "summary": "TimeoutError: The operation was aborted due to timeout",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.316Z"
+    },
+    {
+      "candidateId": "pro-api-coinmarketcap-com-get--x402-v3-cryptocurrency-quotes-latest-70f1b30b0a",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNREACHABLE"
+      ],
+      "summary": "TimeoutError: The operation was aborted due to timeout",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.316Z"
+    },
+    {
+      "candidateId": "quartermaster-surewhynot-app-get--v1-gas-b59446c0a3",
+      "status": "reject",
+      "reasonCodes": [
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.317Z"
+    },
+    {
+      "candidateId": "quokkapix-com-get--api-agent-unlock-coinbase-x402-a418d12b64",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.318Z"
+    },
+    {
+      "candidateId": "randomfactsx402-vercel-app-get--api-random-fact-3626d3e41d",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNREACHABLE"
+      ],
+      "summary": "TimeoutError: The operation was aborted due to timeout",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.318Z"
+    },
+    {
+      "candidateId": "readx-sh-get--api-search-tweets-d7aef233b6",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.319Z"
+    },
+    {
+      "candidateId": "riddlex402-vercel-app-get--api-riddle-4f159daf3b",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNREACHABLE"
+      ],
+      "summary": "TimeoutError: The operation was aborted due to timeout",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.319Z"
+    },
+    {
+      "candidateId": "roastx402endpoint-vercel-app-get--api-roast-ae47f27d8d",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNREACHABLE"
+      ],
+      "summary": "TimeoutError: The operation was aborted due to timeout",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.319Z"
+    },
+    {
+      "candidateId": "router-mudko-com-get--api-x402-route-18a047fe2c",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.320Z"
+    },
+    {
+      "candidateId": "rpc-nodeflare-app-post--base-x402-0af4135bb6",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.320Z"
+    },
+    {
+      "candidateId": "rubric-protocol-com-get--v1-x402-agent-record-rubric-assert-b0ce829724",
+      "status": "reject",
+      "reasonCodes": [
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.321Z"
+    },
+    {
+      "candidateId": "rubric-protocol-com-get--v1-x402-hedera-facts-exchange-rate-5d122ec698",
+      "status": "reject",
+      "reasonCodes": [
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.321Z"
+    },
+    {
+      "candidateId": "rubric-protocol-com-get--v1-x402-hedera-facts-supply-ec3ebad65b",
+      "status": "reject",
+      "reasonCodes": [
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.322Z"
+    },
+    {
+      "candidateId": "rubric-protocol-com-get--v1-x402-hedera-facts-throughput-2380ed433e",
+      "status": "reject",
+      "reasonCodes": [
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.323Z"
+    },
+    {
+      "candidateId": "rubric-protocol-com-post--v1-x402-attested-screening-a9d5986282",
+      "status": "reject",
+      "reasonCodes": [
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.324Z"
+    },
+    {
+      "candidateId": "sat-ipintel-ai-post--satellite-observe-71f98e3db3",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.324Z"
+    },
+    {
+      "candidateId": "search-cyberwarex-com-get--search-b341208faf",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.325Z"
+    },
+    {
+      "candidateId": "space-weather-use-x402atlas-com-get--now-a3f709cd3f",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.326Z"
+    },
+    {
+      "candidateId": "srv1334799-hstgr-cloud-get--v1-x402-demand-snapshot-538509b33c",
+      "status": "reject",
+      "reasonCodes": [
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.327Z"
+    },
+    {
+      "candidateId": "stableenrich-dev-post--api-clado-contacts-enrich-b2f745d18a",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.329Z"
+    },
+    {
+      "candidateId": "stableenrich-dev-post--api-exa-contents-21d3863267",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.330Z"
+    },
+    {
+      "candidateId": "stableenrich-dev-post--api-exa-search-33c99a4d84",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.330Z"
+    },
+    {
+      "candidateId": "stableenrich-dev-post--api-firecrawl-search-f9c3a462e7",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.331Z"
+    },
+    {
+      "candidateId": "stableenrich-dev-post--api-fullenrich-people-search-51a34aac5f",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.332Z"
+    },
+    {
+      "candidateId": "stableenrich-dev-post--api-pdl-people-enrich-1ff1adf258",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.333Z"
+    },
+    {
+      "candidateId": "stablestudio-dev-post--api-upload-ae16186105",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.333Z"
+    },
+    {
+      "candidateId": "stabletravel-dev-get--api-seats-aero-search-5892c14142",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.334Z"
+    },
+    {
+      "candidateId": "stabletube-dev-post--api-download-079c6fa804",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.334Z"
+    },
+    {
+      "candidateId": "stableupload-dev-post--api-site-2614da45a1",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.335Z"
+    },
+    {
+      "candidateId": "stableupload-dev-post--api-upload-408da20b3b",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.335Z"
+    },
+    {
+      "candidateId": "svm402-com-get--price-hcrlc9vdgjlek154xdawfb1dmvj98dosqcwthgqidejr-8f58044881",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.336Z"
+    },
+    {
+      "candidateId": "svm402-com-post--discover-cf72ace1df",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.337Z"
+    },
+    {
+      "candidateId": "tick-hugen-tokyo-get--tick-all-b648bdb07c",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.337Z"
+    },
+    {
+      "candidateId": "tick-hugen-tokyo-get--tick-latest-90c8536c08",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.338Z"
+    },
+    {
+      "candidateId": "tick-hugen-tokyo-get--tick-symbols-c6d0a11de4",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.339Z"
+    },
+    {
+      "candidateId": "toolcall-click-get--t-fx-rates-3c47fa35c8",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.340Z"
+    },
+    {
+      "candidateId": "twitter-use-x402atlas-com-get--search-7e72b7d908",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.341Z"
+    },
+    {
+      "candidateId": "unwrap-use-x402atlas-com-get-c13ec5a020",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.342Z"
+    },
+    {
+      "candidateId": "vaaya-ai-post--api-run-exa-search-c05618082b",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.342Z"
+    },
+    {
+      "candidateId": "vibesprings-net-get--api-price-base-gas-9f342ea010",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.343Z"
+    },
+    {
+      "candidateId": "vibesprings-net-get--api-price-btc-usd-9e06583322",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.343Z"
+    },
+    {
+      "candidateId": "vibesprings-net-get--api-price-eth-usd-d22dd84e3d",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.344Z"
+    },
+    {
+      "candidateId": "web-cyberwarex-com-get--fetch-62a4704af6",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.344Z"
+    },
+    {
+      "candidateId": "websearch-use-x402atlas-com-get--search-aa152a31fd",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.345Z"
+    },
+    {
+      "candidateId": "weight402endpoint-vercel-app-get--api-convert-weight-37ad7b6fb6",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNREACHABLE"
+      ],
+      "summary": "TimeoutError: The operation was aborted due to timeout",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.345Z"
+    },
+    {
+      "candidateId": "www-getbags-app-get--api-v1-707a6785fd",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.346Z"
+    },
+    {
+      "candidateId": "www-mahastrategies-com-post--api-v1-compress-a6865dde62",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.347Z"
+    },
+    {
+      "candidateId": "www-x402scan-com-get--api-x402-merchants-aa72632580",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.348Z"
+    },
+    {
+      "candidateId": "x402-aispace-bot-post--api-v1-chat-completions-22ee7ac13c",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.349Z"
+    },
+    {
+      "candidateId": "x402-aispace-bot-post--api-v1-image-generate-048ab8fb23",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.350Z"
+    },
+    {
+      "candidateId": "x402-botsmith-dev-get--x-search-56dcb7b22b",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.351Z"
+    },
+    {
+      "candidateId": "x402-miroshark-xyz-post--run-5b4a1874fb",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.352Z"
+    },
+    {
+      "candidateId": "x402-ottoai-services-get--base-ecosystem-news-256b42dd94",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.352Z"
+    },
+    {
+      "candidateId": "x402-ottoai-services-get--base-season-63708ad71e",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.353Z"
+    },
+    {
+      "candidateId": "x402-ottoai-services-get--crypto-news-640205ba15",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.353Z"
+    },
+    {
+      "candidateId": "x402-ottoai-services-get--defi-analytics-596db70621",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.354Z"
+    },
+    {
+      "candidateId": "x402-ottoai-services-get--funding-rates-90f7d6e102",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.355Z"
+    },
+    {
+      "candidateId": "x402-ottoai-services-get--hyperliquid-market-7ad9ca2ad7",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.355Z"
+    },
+    {
+      "candidateId": "x402-ottoai-services-get--token-details-0221b373e4",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.356Z"
+    },
+    {
+      "candidateId": "x402-ottoai-services-get--tradfi-data-6e3b8bb683",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.357Z"
+    },
+    {
+      "candidateId": "x402-ottoai-services-get--tweet-search-534d7da853",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.358Z"
+    },
+    {
+      "candidateId": "x402-ottoai-services-get--twitter-summary-9d4d8eb33f",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.358Z"
+    },
+    {
+      "candidateId": "x402-ottoai-services-get--weather-1f03b418cd",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.359Z"
+    },
+    {
+      "candidateId": "x402-ottoai-services-get--yield-markets-cd6ccba6b5",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.360Z"
+    },
+    {
+      "candidateId": "x402-twit-sh-get--tweets-search-b31bda1fc4",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.360Z"
+    },
+    {
+      "candidateId": "x402lifeadvice-vercel-app-get--api-life-advice-6c6544ccd4",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNREACHABLE"
+      ],
+      "summary": "TypeError: fetch failed",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.361Z"
+    },
+    {
+      "candidateId": "x402uselessfacts-vercel-app-get--api-useless-fact-4c2944d017",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNREACHABLE"
+      ],
+      "summary": "TimeoutError: The operation was aborted due to timeout",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.361Z"
+    },
+    {
+      "candidateId": "x402wordoftheday-vercel-app-get--api-word-of-the-day-101bc7d66b",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNREACHABLE"
+      ],
+      "summary": "TimeoutError: The operation was aborted due to timeout",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.361Z"
+    },
+    {
+      "candidateId": "xmedia-use-x402atlas-com-get--tweet-3f483cd756",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.362Z"
+    },
+    {
+      "candidateId": "youtube-use-x402atlas-com-get--transcript-cad6457c2b",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.363Z"
+    },
+    {
+      "candidateId": "zoningverdict-com-post--api-v1-parcel-resolve-81000e742e",
+      "status": "reject",
+      "reasonCodes": [
+        "INVALID_ROUTE_PREFIX",
+        "UNSUPPORTED_NETWORK"
+      ],
+      "summary": "no payment option satisfies the configured Kite admission policy",
+      "attemptStatuses": [
+        "reject",
+        "reject",
+        "reject"
+      ],
+      "evaluatedAt": "2026-09-23T17:19:41.363Z"
+    }
+  ]
+}

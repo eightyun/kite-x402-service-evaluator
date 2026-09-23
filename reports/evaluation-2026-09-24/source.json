@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "sourceType": "x402-bazaar-snapshot",
+  "endpoint": "https://api.cdp.coinbase.com/platform/v2/x402/discovery/resources",
+  "retrievedAt": "2026-09-23T17:09:03.616Z",
+  "catalogTotal": 16654,
+  "selectedCandidates": 200,
+  "pages": [
+    {
+      "offset": 0,
+      "itemCount": 20,
+      "sha256": "7728cf537d989fbae35e19fdf5f559bb48b2cfc445031ba5be2b628d307c4faf"
+    },
+    {
+      "offset": 20,
+      "itemCount": 20,
+      "sha256": "f13e400307842ef8638adfbb36e474863e4062d1cad455e8408d0ec933699f37"
+    },
+    {
+      "offset": 40,
+      "itemCount": 20,
+      "sha256": "7b929c3f95908f98ffd2a440384f2f7f6c9ef1b844dad63a1af2d26b04e86722"
+    },
+    {
+      "offset": 60,
+      "itemCount": 20,
+      "sha256": "f36a02504ba215917917b6b2b25303a3e1ab436896c1258e6a83ab5a902ea7df"
+    },
+    {
+      "offset": 80,
+      "itemCount": 20,
+      "sha256": "b9690c8fa36a49fec07d2ce212e721dba4ce462ea8bc682f8340774a4393b7cf"
+    },
+    {
+      "offset": 100,
+      "itemCount": 20,
+      "sha256": "4392524dc16d8e8e93132307221de86adcb27e4a3f7190e95962e6fbb9893213"
+    },
+    {
+      "offset": 120,
+      "itemCount": 20,
+      "sha256": "c2b5c0dfc8aa7ad9326deb313f22d8b283d0c7bf5eb7ca4f3771bf1fa2d5eff5"
+    },
+    {
+      "offset": 140,
+      "itemCount": 20,
+      "sha256": "d73f90f0e56c92b53815d82e827882a8917f1dac120172e81aa65c8ff81371da"
+    },
+    {
+      "offset": 160,
+      "itemCount": 20,
+      "sha256": "b3df832757962443054231bbc75dd4182ad1a54947f86881d326da82f53278db"
+    },
+    {
+      "offset": 180,
+      "itemCount": 20,
+      "sha256": "7586cf76ca33f0b07ae0055492c140af3023d7a52edfa77b9885be66ecbb5d22"
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 import path from "node:path";
+import { readdir, readFile } from "node:fs/promises";
 import type {
   AlertRecord,
   Candidate,
@@ -20,6 +21,14 @@ export interface RunOptions {
   mode: "evaluation" | "monitor";
   runId?: string;
   alertFile?: string;
+}
+
+export interface ReplayOptions {
+  sourceRunDirectory: string;
+  policyFile: string;
+  policy: Policy;
+  outputRoot: string;
+  runId: string;
 }
 
 async function mapConcurrent<T, R>(
@@ -93,5 +102,45 @@ export async function runEvaluation(options: RunOptions): Promise<RunRecord> {
       await appendJsonLine(options.alertFile, alert);
     }
   }
+  return run;
+}
+
+export async function replayEvaluation(options: ReplayOptions): Promise<RunRecord> {
+  const startedAt = new Date().toISOString();
+  const runDirectory = path.join(options.outputRoot, "runs", safeId(options.runId));
+  const sourceCandidates = path.join(options.sourceRunDirectory, "candidates");
+  const candidates: Candidate[] = [];
+  const evaluations: EvaluationResult[] = [];
+  for (const id of (await readdir(sourceCandidates)).sort()) {
+    const sourceDirectory = path.join(sourceCandidates, id);
+    const [candidate, evidence] = await Promise.all([
+      readFile(path.join(sourceDirectory, "candidate.json"), "utf8").then(
+        (value) => JSON.parse(value) as Candidate,
+      ),
+      readFile(path.join(sourceDirectory, "probe.json"), "utf8").then(
+        (value) => JSON.parse(value) as import("./domain.js").HttpEvidence[],
+      ),
+    ]);
+    const evaluation = evaluateCandidate(candidate, evidence, options.policy);
+    const directory = path.join(runDirectory, "candidates", safeId(candidate.id));
+    await Promise.all([
+      writeJson(path.join(directory, "candidate.json"), candidate),
+      writeJson(path.join(directory, "probe.json"), evidence),
+      writeJson(path.join(directory, "decision.json"), evaluation),
+    ]);
+    candidates.push(candidate);
+    evaluations.push(evaluation);
+  }
+  const run: RunRecord = {
+    runId: options.runId,
+    mode: "evaluation",
+    startedAt,
+    completedAt: new Date().toISOString(),
+    candidateCount: candidates.length,
+    counts: countStatuses(evaluations),
+    policyFile: options.policyFile,
+  };
+  await writeJson(path.join(runDirectory, "run.json"), run);
+  await writeReport(runDirectory, run, candidates, evaluations);
   return run;
 }

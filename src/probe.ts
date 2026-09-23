@@ -56,14 +56,20 @@ export async function probeOnce(
 ): Promise<HttpEvidence> {
   const started = performance.now();
   const observedAt = new Date().toISOString();
-  const requestHeaders = {
+  const requestHeaders: Record<string, string> = {
     accept: "application/json",
     "user-agent": "kite-x402-service-evaluator/0.1",
+    ...(candidate.request?.headers ?? {}),
   };
+  const body = candidate.request?.body;
+  if (body !== undefined && !Object.keys(requestHeaders).some((name) => name.toLowerCase() === "content-type")) {
+    requestHeaders["content-type"] = "application/json";
+  }
   try {
     const response = await fetch(candidate.url, {
       method: candidate.method,
       headers: requestHeaders,
+      ...(body !== undefined ? { body: JSON.stringify(body) } : {}),
       redirect: "manual",
       signal: AbortSignal.timeout(policy.requestTimeoutMs),
     });
@@ -72,7 +78,12 @@ export async function probeOnce(
       attempt,
       observedAt,
       elapsedMs: Math.round(performance.now() - started),
-      request: { method: candidate.method, url: candidate.url, headers: requestHeaders },
+      request: {
+        method: candidate.method,
+        url: candidate.url,
+        headers: requestHeaders,
+        ...(body !== undefined ? { body } : {}),
+      },
       response: {
         status: response.status,
         headers: evidenceHeaders(response.headers),
@@ -85,7 +96,12 @@ export async function probeOnce(
       attempt,
       observedAt,
       elapsedMs: Math.round(performance.now() - started),
-      request: { method: candidate.method, url: candidate.url, headers: requestHeaders },
+      request: {
+        method: candidate.method,
+        url: candidate.url,
+        headers: requestHeaders,
+        ...(body !== undefined ? { body } : {}),
+      },
       error: error instanceof Error ? `${error.name}: ${error.message}` : String(error),
     };
   }

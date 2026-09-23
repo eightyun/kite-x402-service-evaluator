@@ -2,6 +2,13 @@ import { readJson } from "./io.js";
 import type { Candidate, HttpMethod, Policy } from "./domain.js";
 
 const METHODS = new Set<HttpMethod>(["GET", "POST", "PUT", "PATCH", "DELETE"]);
+const FORBIDDEN_REQUEST_HEADERS = new Set([
+  "authorization",
+  "cookie",
+  "payment-signature",
+  "proxy-authorization",
+  "x-payment",
+]);
 
 export async function loadPolicy(file: string): Promise<Policy> {
   const policy = await readJson<Policy>(file);
@@ -33,11 +40,20 @@ export function validateCandidate(value: Candidate): Candidate {
   if (!METHODS.has(value.method)) throw new Error(`${value.id}: unsupported HTTP method`);
   const url = new URL(value.url);
   if (!url.hostname) throw new Error(`${value.id}: URL must have a host`);
+  if (url.username || url.password) throw new Error(`${value.id}: URL credentials are forbidden`);
   if (url.protocol !== "https:" && url.hostname !== "127.0.0.1" && url.hostname !== "localhost") {
     throw new Error(`${value.id}: public candidate URLs must use HTTPS`);
   }
-  if (!url.pathname.startsWith("/v1/")) {
-    throw new Error(`${value.id}: candidate path must start with /v1/`);
+  if (value.request?.headers) {
+    for (const name of Object.keys(value.request.headers)) {
+      if (FORBIDDEN_REQUEST_HEADERS.has(name.toLowerCase())) {
+        throw new Error(`${value.id}: request header ${name} is forbidden`);
+      }
+    }
+  }
+  if (value.request?.body !== undefined) {
+    const body = JSON.stringify(value.request.body);
+    if (body.length > 65_536) throw new Error(`${value.id}: request body exceeds 64 KiB`);
   }
   if (!value.source) throw new Error(`${value.id}: source is required`);
   return value;

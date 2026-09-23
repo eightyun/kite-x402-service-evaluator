@@ -1,0 +1,31 @@
+{
+  "run": {
+    "runId": "monitor-degraded-2026-09-24",
+    "mode": "monitor",
+    "startedAt": "2026-09-23T17:25:56.390Z",
+    "completedAt": "2026-09-23T17:25:56.409Z",
+    "candidateCount": 1,
+    "counts": {
+      "pass": 0,
+      "pending": 1,
+      "reject": 0
+    },
+    "policyFile": "config/policy.json"
+  },
+  "evaluations": [
+    {
+      "candidateId": "kite-rust-axum-v1-price",
+      "status": "pending",
+      "reasonCodes": [
+        "UNREACHABLE"
+      ],
+      "summary": "TypeError: fetch failed",
+      "attemptStatuses": [
+        "pending",
+        "pending",
+        "pending"
+      ],
+      "evaluatedAt": "2026-09-23T17:25:56.409Z"
+    }
+  ]
+}

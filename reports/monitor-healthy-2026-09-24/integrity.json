@@ -1,0 +1,30 @@
+{
+  "generatedAt": "2026-09-23T17:25:02.621Z",
+  "files": [
+    {
+      "file": "summary.json",
+      "bytes": 491,
+      "sha256": "f8396bef9099e64ec07f79a81181a3cbdbfa9950764c5e857b94fa41506994da"
+    },
+    {
+      "file": "decisions.jsonl",
+      "bytes": 771,
+      "sha256": "418831bfba28503b700978129c8a3f10cc2b835097186241a25f1f258d35d2fa"
+    },
+    {
+      "file": "raw-402.jsonl",
+      "bytes": 5008,
+      "sha256": "0cf857c14104816cbcb8d7a61df36241c0b222cc26804ad4c6ac714ddf9cac14"
+    },
+    {
+      "file": "evaluation-report.json",
+      "bytes": 1041,
+      "sha256": "d3e1c7c604f7505b1be5d8afcfe0f6ea462f78220a0ee43aa89164e5f72992c2"
+    },
+    {
+      "file": "evaluation-report.md",
+      "bytes": 484,
+      "sha256": "26f8402e754caedcc0cebe577e720afdb052bbd2191c9ac4d325ed4e31df8921"
+    }
+  ]
+}

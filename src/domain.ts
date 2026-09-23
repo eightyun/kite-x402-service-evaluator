@@ -6,6 +6,12 @@ export interface Candidate {
   method: HttpMethod;
   url: string;
   source: string;
+  request?: {
+    headers?: Record<string, string>;
+    body?: unknown;
+  };
+  discoveredAt?: string;
+  catalogUpdatedAt?: string;
   expectedNetwork?: string;
   expectedAsset?: string;
   expectedPriceUsd?: string;
@@ -59,6 +65,7 @@ export interface HttpEvidence {
     method: HttpMethod;
     url: string;
     headers: Record<string, string>;
+    body?: unknown;
   };
   response?: {
     status: number;

@@ -1,0 +1,31 @@
+{
+  "run": {
+    "runId": "evaluation-2026-09-24-reviewed",
+    "mode": "evaluation",
+    "startedAt": "2026-09-23T17:19:41.216Z",
+    "completedAt": "2026-09-23T17:19:41.364Z",
+    "candidateCount": 200,
+    "counts": {
+      "pass": 0,
+      "pending": 0,
+      "reject": 200
+    },
+    "policyFile": "config/policy.json"
+  },
+  "uniqueHosts": 113,
+  "attempts": 600,
+  "responseAttempts": 543,
+  "errorAttempts": 57,
+  "raw402Responses": 537,
+  "reasonCounts": {
+    "INVALID_ROUTE_PREFIX": 172,
+    "UNREACHABLE": 19,
+    "UNSUPPORTED_NETWORK": 179,
+    "NO_402_RESPONSE": 2
+  },
+  "httpStatusCounts": {
+    "402": 537,
+    "404": 3,
+    "500": 3
+  }
+}

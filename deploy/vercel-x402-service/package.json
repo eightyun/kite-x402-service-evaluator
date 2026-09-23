@@ -1,0 +1,9 @@
+{
+  "name": "kite-x402-monitor-fixture",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  }
+}

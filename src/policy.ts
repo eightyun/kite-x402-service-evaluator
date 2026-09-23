@@ -90,17 +90,20 @@ export function evaluateAttempt(
   evidence: HttpEvidence,
   policy: Policy,
 ): AttemptDecision {
+  const candidateReasons = new URL(candidate.url).pathname.startsWith("/v1/")
+    ? []
+    : [ReasonCode.InvalidRoutePrefix];
   if (!evidence.response) {
     return {
-      status: "pending",
-      reasons: [ReasonCode.Unreachable],
+      status: candidateReasons.length ? "reject" : "pending",
+      reasons: [...candidateReasons, ReasonCode.Unreachable],
       summary: evidence.error ?? "request failed",
     };
   }
   if (evidence.response.status !== 402) {
     return {
       status: "reject",
-      reasons: [ReasonCode.No402Response],
+      reasons: [...candidateReasons, ReasonCode.No402Response],
       summary: `expected HTTP 402, received ${evidence.response.status}`,
     };
   }
@@ -108,7 +111,7 @@ export function evaluateAttempt(
   if (!encoded) {
     return {
       status: "reject",
-      reasons: [ReasonCode.MissingPaymentRequired],
+      reasons: [...candidateReasons, ReasonCode.MissingPaymentRequired],
       summary: "HTTP 402 response has no PAYMENT-REQUIRED header",
     };
   }
@@ -116,14 +119,14 @@ export function evaluateAttempt(
   if (!parsed.challenge) {
     return {
       status: "reject",
-      reasons: [ReasonCode.InvalidPaymentRequired],
+      reasons: [...candidateReasons, ReasonCode.InvalidPaymentRequired],
       summary: parsed.error ?? "invalid PAYMENT-REQUIRED header",
     };
   }
   if (parsed.challenge.x402Version !== 2) {
     return {
       status: "reject",
-      reasons: [ReasonCode.InvalidX402Version],
+      reasons: [...candidateReasons, ReasonCode.InvalidX402Version],
       summary: "only x402 v2 is accepted",
     };
   }
@@ -131,13 +134,13 @@ export function evaluateAttempt(
   if (terms.length === 0) {
     return {
       status: "reject",
-      reasons: [ReasonCode.MissingAccepts],
+      reasons: [...candidateReasons, ReasonCode.MissingAccepts],
       summary: "payment challenge has no usable accepts entry",
     };
   }
   const evaluated = terms.map((term) => ({ term, reasons: evaluateTerm(candidate, term, policy) }));
   const accepted = evaluated.find((entry) => entry.reasons.length === 0);
-  if (accepted) {
+  if (accepted && candidateReasons.length === 0) {
     return {
       status: "pass",
       reasons: [],
@@ -145,9 +148,12 @@ export function evaluateAttempt(
       selectedTerm: accepted.term,
     };
   }
+  const closest = evaluated.reduce((best, entry) =>
+    entry.reasons.length < best.reasons.length ? entry : best,
+  );
   return {
     status: "reject",
-    reasons: [...new Set(evaluated.flatMap((entry) => entry.reasons))],
+    reasons: [...new Set([...candidateReasons, ...closest.reasons])],
     summary: "no payment option satisfies the configured Kite admission policy",
   };
 }

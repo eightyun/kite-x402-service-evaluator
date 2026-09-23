@@ -73,3 +73,25 @@ test("marks inconsistent attempts pending", () => {
   assert.equal(result.status, "pending");
   assert.ok(result.reasonCodes.includes("UNSTABLE_ENDPOINT"));
 });
+
+test("rejects routes outside the Kite /v1 prefix", () => {
+  const result = evaluateCandidate(
+    { ...candidate, url: "https://example.com/api/data" },
+    [evidence(challenge())],
+    policy,
+  );
+  assert.equal(result.status, "reject");
+  assert.ok(result.reasonCodes.includes("INVALID_ROUTE_PREFIX"));
+});
+
+test("reports reasons from the closest payment option", () => {
+  const mixedChallenge = challenge() as { accepts: Array<Record<string, unknown>> };
+  mixedChallenge.accepts = [
+    { ...mixedChallenge.accepts[0], network: "eip155:8453" },
+    { ...mixedChallenge.accepts[0], scheme: "batch-settlement", network: "eip155:8453" },
+  ];
+  const result = evaluateCandidate(candidate, [evidence(mixedChallenge)], policy);
+  assert.equal(result.status, "reject");
+  assert.ok(result.reasonCodes.includes("UNSUPPORTED_NETWORK"));
+  assert.ok(!result.reasonCodes.includes("UNSUPPORTED_SCHEME"));
+});

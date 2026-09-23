@@ -108,6 +108,45 @@ npm start -- ingest \
 Only deployed manifests with a `base_url` are imported. Endpoints are
 normalized and deduplicated by HTTP method and URL.
 
+## Import the public x402 Bazaar
+
+The official Bazaar discovery API provides a sourced inventory of public x402
+services. The importer resolves documented path/query examples, preserves POST
+bodies, deduplicates requests, and records a SHA-256 hash for every catalog
+page used as source evidence.
+
+```bash
+npm start -- discover \
+  --endpoint https://api.cdp.coinbase.com/platform/v2/x402/discovery/resources \
+  --limit 200 \
+  --out data/candidates.jsonl \
+  --source reports/run-id/source.json
+```
+
+If the runtime cannot reach the API directly, download pages with `curl` and
+use `discover-snapshots`. The committed 2026-09-24 inventory was generated
+from 10 pages containing 200 unique HTTP endpoints.
+
+## Replay and export evidence
+
+Policy changes can be tested against saved responses without sending another
+request to public services:
+
+```bash
+npm start -- replay \
+  --source-run artifacts/runs/original-run \
+  --policy config/policy.json \
+  --out artifacts \
+  --run-id reviewed-run
+
+npm start -- export \
+  --run artifacts/runs/reviewed-run \
+  --out reports/reviewed-run
+```
+
+The export contains compact decisions, redacted raw 402 responses, summary
+counts, and SHA-256 integrity hashes.
+
 ## Manual review
 
 Record at least three manual reviews before submitting an admission report:
@@ -154,6 +193,19 @@ npm start -- monitor \
 Any `pending` result creates a warning; any `reject` result creates a critical
 alert record. The included scheduled workflow is disabled until a real admitted
 candidate file is committed, preventing noisy or misleading monitoring.
+
+## 2026-09-24 evaluation evidence
+
+The committed run evaluated 200 catalog candidates across 113 unique hosts with
+600 probes. It captured 537 raw HTTP 402 responses. All 200 candidates were
+rejected under the Kite policy: 179 advertised no supported Kite network, 172
+also used a route outside `/v1/*`, 19 were unreachable, and 2 returned a stable
+non-402 response. Reason counts overlap when a candidate violates more than one
+rule.
+
+Evidence is in [`reports/evaluation-2026-09-24`](reports/evaluation-2026-09-24),
+manual reviews are in [`reviews/reviews.jsonl`](reviews/reviews.jsonl), and the
+verified Kite testnet settlement is in [`payment-audits`](payment-audits).
 
 ## Decision model
 

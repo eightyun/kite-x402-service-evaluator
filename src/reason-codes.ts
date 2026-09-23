@@ -1,5 +1,6 @@
 export const ReasonCode = {
   Unreachable: "UNREACHABLE",
+  InvalidRoutePrefix: "INVALID_ROUTE_PREFIX",
   No402Response: "NO_402_RESPONSE",
   MissingPaymentRequired: "MISSING_PAYMENT_REQUIRED",
   InvalidPaymentRequired: "INVALID_PAYMENT_REQUIRED",
