@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "generatedAt": "2026-09-24T21:33:05+08:00",
+  "candidateCount": 201,
+  "counts": {
+    "pass": 1,
+    "pending": 1,
+    "reject": 199
+  },
+  "sources": [
+    "reports/evaluation-2026-09-24",
+    "reports/public-monitor-healthy-2026-09-24",
+    "reviews/reviews.jsonl",
+    "reviews/owner-signoff.json"
+  ],
+  "note": "Final recommendations combine automated evidence with owner-confirmed manual review. KiteAI retains final admission authority."
+}

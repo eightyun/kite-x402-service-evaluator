@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "generatedAt": "2026-09-24T21:33:05+08:00",
+  "files": [
+    {
+      "file": "decisions.jsonl",
+      "bytes": 137502,
+      "sha256": "4c2711f3e30cef238e9b9074313642136086f023c6f55dd3f278701afe54429a"
+    },
+    {
+      "file": "summary.json",
+      "bytes": 467,
+      "sha256": "0a4c9be25270be41f30aa9697a034a2e9d7f7366bf70bb81c8dba28c85a32fce"
+    },
+    {
+      "file": "evaluation-report.md",
+      "bytes": 878,
+      "sha256": "a670bc24942a2e9120056ad0fbf2d22c3695d68ec80cfdd6dd967c2fd5acb936"
+    }
+  ]
+}

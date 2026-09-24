@@ -165,6 +165,11 @@ npm start -- review \
 
 Reviews are append-only JSONL records in `reviews/reviews.jsonl`.
 
+The final owner-reviewed register is in
+[`reports/final-admission-2026-09-24`](reports/final-admission-2026-09-24). It
+combines the 200-candidate catalog run with the public monitored service and
+records 1 pass, 1 pending, and 199 reject recommendations.
+
 ## Payment audit records
 
 After an explicitly authorized paid test, record the result without storing a
@@ -179,6 +184,11 @@ npm start -- record-payment \
   --status success \
   --transaction 0xYOUR_TRANSACTION_HASH
 ```
+
+The committed audits contain one successful 0.001 pieUSD Rust/Axum call with a
+verified Kite testnet receipt. They also record two zero-spend attempts against
+the public monitoring fixture that Passport blocked because its hostname is not
+yet in the executable service catalog.
 
 ## Continuous monitoring
 

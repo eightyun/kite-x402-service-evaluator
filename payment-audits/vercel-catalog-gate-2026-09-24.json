@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "candidateId": "kite-x402-monitor-fixture",
+  "auditedAt": "2026-09-24T13:33:05.000Z",
+  "url": "https://vercel-x402-service.vercel.app/v1/status",
+  "network": "eip155:2368",
+  "asset": "0x38129cf4CE5E183eFF248F42A7D345Bb1B47621A",
+  "amountAtomic": "1000000000000000",
+  "amountDecimal": "0.001",
+  "sessionBudget": {
+    "maxAmountPerTransactionUsd": "0.001",
+    "maxTotalAmountUsd": "0.001"
+  },
+  "attempts": [
+    {
+      "environment": "production",
+      "status": "blocked",
+      "errorCode": "payment_target_forbidden",
+      "reason": "host_not_in_executable_catalog"
+    },
+    {
+      "environment": "development",
+      "status": "blocked",
+      "errorCode": "payment_target_forbidden",
+      "reason": "host_not_in_executable_catalog"
+    }
+  ],
+  "observedSessionUsage": {
+    "reservedTotalUsd": "0",
+    "spentTotalUsd": "0"
+  },
+  "spentUsd": "0",
+  "transactions": [],
+  "resolution": "Kite must add the host to the executable catalog or grant partner testing allowlist access before this service can be paid through Passport."
+}

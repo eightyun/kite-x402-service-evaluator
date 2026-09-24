@@ -10,14 +10,14 @@ the final admission decision.
 
 | Requirement | Repository support | Evidence |
 |---|---|---|
-| Evaluate at least 200 candidate endpoints | JSONL ingestion, bounded concurrency, immutable run artifacts | 200 sourced endpoints, 113 hosts, and 600 probes in `reports/evaluation-2026-09-24` |
-| Pass, pending, reject with reasons | Policy engine and stable reason codes | Curated JSON and Markdown reports |
+| Evaluate at least 200 candidate endpoints | JSONL ingestion, bounded concurrency, immutable run artifacts | 201 final records backed by 200 sourced catalog endpoints, 113 hosts, and 600 catalog probes |
+| Pass, pending, reject with reasons | Policy engine and stable reason codes | Final register contains 1 pass, 1 pending, and 199 reject recommendations |
 | At least three manual reviews | Append-only review records with reviewer, timestamp, and rationale | Three owner-confirmed records in `reviews` |
 | Explain false positives or false negatives | `misjudgmentCause` on manual review records | Two documented causes; the aggregation defect was fixed and replayed |
 | Continuous monitoring and alerts | Monitor command, six-hour workflow, exit-on-alert behavior, and append-only alerts | Public healthy run plus degraded and transport-alert runs |
 | Evaluation report and raw 402 responses | Per-run JSON evidence plus JSON and Markdown reports | 537 redacted catalog responses and 3 public monitor responses with integrity hashes |
-| Payment audit records | Validated records with transaction hashes | Authorized 0.001 pieUSD settlement verified through Kite RPC |
-| Controllable and auditable spend | Paid execution disabled by default; policy contains budget limits | No automated spend; the authorized test amount and transaction are recorded |
+| Payment audit records | Validated records with transaction hashes | Authorized 0.001 pieUSD settlement verified through Kite RPC; current-service catalog rejection also recorded |
+| Controllable and auditable spend | Paid execution disabled by default; policy contains budget limits | Successful audit spent 0.001 pieUSD; catalog-blocked attempts had a 0.001 cap and spent zero |
 
 ## Milestones
 
@@ -27,7 +27,7 @@ the final admission decision.
 4. Complete: owner-confirmed manual review and report generation.
 5. Complete: public monitoring, scheduled checks, and alert records.
 6. Complete: explicitly authorized payment audit with automated paid execution disabled.
-7. Complete: 200 public endpoints evaluated and three results manually reviewed.
+7. Complete: 201 final endpoint records and three owner-confirmed manual reviews.
 
 ## Safety boundaries
 
