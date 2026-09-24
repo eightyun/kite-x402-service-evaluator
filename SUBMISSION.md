@@ -12,9 +12,9 @@ authority.
 | Continuously monitor admitted services and alert | Public Vercel service, healthy/alert monitor evidence, six-hour GitHub Actions workflow | Complete |
 | Evaluation report | Catalog report plus `reports/final-admission-2026-09-24` | Complete |
 | Raw 402 responses | `reports/evaluation-2026-09-24/raw-402.jsonl` and integrity manifest | Complete: 537 redacted responses |
-| Paid-call audit records | `payment-audits/audits.jsonl`, verified RPC receipt, and Vercel catalog-gate audit | Complete: successful 0.001 pieUSD settlement plus zero-spend blocked-host audit |
+| Paid-call audit records | `payment-audits/audits.jsonl` and `payment-audits/vercel-catalog-gate-2026-09-24.json` | Blocked: no successful paid call; Passport rejected the hostname before signing because it is absent from the executable catalog |
 | Review conclusions and alert records | `reviews/reviews.jsonl`, `reviews/owner-signoff.json`, `alerts/alerts.jsonl` | Complete |
-| Controlled, auditable spend | Automated payment disabled; successful audit spent 0.001 pieUSD; current-service attempts used a 0.001 total cap and spent zero | Complete |
+| Controlled, auditable spend | Automated payment disabled; attempts used a 0.001 USD per-transaction and total cap and spent zero | Complete |
 
 ## Material result
 
@@ -35,13 +35,22 @@ HTTP 402 responses and a `pass` decision in
 `reports/public-monitor-healthy-2026-09-24`. The six-hour workflow fails on
 `pending` or `reject` while retaining evidence as a workflow artifact.
 
-## Paid-call scope
+## Paid-call status
 
-The successful paid audit used the related Rust/Axum Kite wrapper and records a
-0.001 pieUSD transfer, HTTP 200 response, transaction hash, and independently
-verified Kite RPC receipt. Passport rejected both production and development
-attempts against the Vercel monitoring fixture before signing because its host
-is not yet in the executable service catalog. The blocked attempts spent zero;
-their error code and approved budget are recorded in
-`payment-audits/vercel-catalog-gate-2026-09-24.json`. A same-service paid audit
-requires Kite catalog registration or partner allowlist access.
+There is no successful paid-call audit for the public monitored service.
+Passport rejected both production and development attempts before signing with
+`payment_target_forbidden` / `host_not_in_executable_catalog`. Consequently,
+the service received no `PAYMENT-SIGNATURE`, the facilitator was not called,
+there is no settlement transaction or HTTP 200 paid response, and observed
+spend remained zero. The exact attempts and approved 0.001 USD budget are in
+`payment-audits/vercel-catalog-gate-2026-09-24.json`.
+
+A valid paid-call audit can be produced only after Kite adds
+`vercel-x402-service.vercel.app` to the Passport executable catalog or grants
+partner testing allowlist access. After access is granted, the audit procedure
+is: approve a tightly bounded sandbox session; execute one paid
+`GET https://vercel-x402-service.vercel.app/v1/status`; preserve the HTTP 200
+response and decoded `PAYMENT-RESPONSE`; verify the transaction hash, network,
+asset, amount, payer, and payee through Kite testnet RPC or Kitescan; then add
+the verified result with the repository's `record-payment` command. Private
+keys and payment signatures must not be stored.

@@ -16,8 +16,8 @@ the final admission decision.
 | Explain false positives or false negatives | `misjudgmentCause` on manual review records | Two documented causes; the aggregation defect was fixed and replayed |
 | Continuous monitoring and alerts | Monitor command, six-hour workflow, exit-on-alert behavior, and append-only alerts | Public healthy run plus degraded and transport-alert runs |
 | Evaluation report and raw 402 responses | Per-run JSON evidence plus JSON and Markdown reports | 537 redacted catalog responses and 3 public monitor responses with integrity hashes |
-| Payment audit records | Validated records with transaction hashes | Authorized 0.001 pieUSD settlement verified through Kite RPC; current-service catalog rejection also recorded |
-| Controllable and auditable spend | Paid execution disabled by default; policy contains budget limits | Successful audit spent 0.001 pieUSD; catalog-blocked attempts had a 0.001 cap and spent zero |
+| Payment audit records | Validated records with transaction hashes | Blocked for the monitored service: Passport rejected the hostname before signing because it is absent from the executable catalog; no transaction exists |
+| Controllable and auditable spend | Paid execution disabled by default; policy contains budget limits | Catalog-blocked attempts had a 0.001 USD per-transaction and total cap and spent zero |
 
 ## Milestones
 
@@ -26,7 +26,9 @@ the final admission decision.
 3. Complete: unpaid 402 probe, evidence capture, and policy evaluation.
 4. Complete: owner-confirmed manual review and report generation.
 5. Complete: public monitoring, scheduled checks, and alert records.
-6. Complete: explicitly authorized payment audit with automated paid execution disabled.
+6. Blocked: explicitly authorized attempts were rejected before signing because
+   the monitored hostname is not in the Passport executable catalog. Complete
+   this milestone after catalog or allowlist access permits a real settlement.
 7. Complete: 201 final endpoint records and three owner-confirmed manual reviews.
 
 ## Safety boundaries

@@ -185,10 +185,27 @@ npm start -- record-payment \
   --transaction 0xYOUR_TRANSACTION_HASH
 ```
 
-The committed audits contain one successful 0.001 pieUSD Rust/Axum call with a
-verified Kite testnet receipt. They also record two zero-spend attempts against
-the public monitoring fixture that Passport blocked because its hostname is not
-yet in the executable service catalog.
+This repository does not currently contain a successful paid-call audit for the
+public monitored service. Kite Passport rejected both production and
+development attempts before it generated a `PAYMENT-SIGNATURE` because
+`vercel-x402-service.vercel.app` is not in the executable service catalog. The
+request therefore never reached facilitator verification or settlement, no
+transaction was created, and the approved 0.001 USD session budget spent zero.
+The failed attempts and exact error are preserved in
+[`payment-audits/vercel-catalog-gate-2026-09-24.json`](payment-audits/vercel-catalog-gate-2026-09-24.json).
+
+To produce a successful paid-call audit for this service:
+
+1. Kite must add `vercel-x402-service.vercel.app` to the Passport executable
+   catalog or grant the hostname partner testing allowlist access.
+2. Confirm an unpaid `GET /v1/status` still returns the expected Kite testnet
+   x402 v2 challenge.
+3. Approve a sandbox Passport session with a 0.001 USD per-transaction and total
+   budget, then execute one paid request to that exact URL.
+4. Preserve the HTTP 200 response, decoded `PAYMENT-RESPONSE`, transaction hash,
+   network, asset, amount, payer, and payee without storing any signature or key.
+5. Verify the transaction receipt through Kite testnet RPC or Kitescan and add
+   the result with `record-payment`.
 
 ## Continuous monitoring
 
@@ -228,7 +245,7 @@ rule.
 
 Evidence is in [`reports/evaluation-2026-09-24`](reports/evaluation-2026-09-24),
 manual reviews are in [`reviews/reviews.jsonl`](reviews/reviews.jsonl), and the
-verified Kite testnet settlement is in [`payment-audits`](payment-audits).
+blocked paid-call attempts are in [`payment-audits`](payment-audits).
 Repository-owner confirmation of all three reviews is recorded in
 [`reviews/owner-signoff.json`](reviews/owner-signoff.json).
 
